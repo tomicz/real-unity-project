@@ -45,52 +45,51 @@ And some of the important guidelines include:
 > ```csharp
 > namespace MyNamespace
 > {
->     /*
->      * This interface serves as an example.
->      */
+>     /// <summary>
+>     /// This interface serves as an example
+>     /// </summary>
 >     public interface IMyInterface
 >     {
->         /*
->          * MyMethod is an interface method with one parameter.
->          */
+>         /// <summary>
+>         /// MyMethod is an interface method with one parameter. 
+>         /// </summary>
 >         void MyMethod(int myParameter);
 >     }
 > 
->     /*
->      * This class serves as an example.
->      */
+>     /// <summary>
+>     /// This class serves as an example.
+>     /// </summary>
 >     public class MyClass
 >     {
->         /*
->          * This is a public field.
->          */
+>         /// <summary>
+>         /// This is a public field.
+>         /// </summary>
 >         public int MyPublicField;
 > 
->         /*
->          * This is a private field.
->          */
+>         /// <summary>
+>         /// This is a private field.
+>         /// </summary>
 >         private int _myPrivateField;
 >         
->         /*
->          * This is a public property.
->          */
+>         /// <summary>
+>         /// This is a public property.
+>         /// </summary>
 >         public string MyPublicProperty { get; set; }
 > 
 >         private string _myPrivateProperty { get; set; }
 > 
->         /*
->          * This is a constant.
->          */
+>         /// <summary>
+>         /// This is a constant.
+>         /// </summary>
 >         public const int MyConstant = 10;
 > 
 >         private static string s_myPrivateField = "Hello";
 > 
 >         [ThreadStatic]
 >         private static string t_myPrivateField = "World";
-> 
->         /*
->          * This is a public method with one parameter.
->          */
+>         /// <summary>
+>         /// This is a public method with one parameter.
+>         /// </summary>
 >         public void MyMethod(int myParameter)
 >         {
 >             var myLocalVariable = "Local Variable";
@@ -100,17 +99,17 @@ And some of the important guidelines include:
 >         }
 >     }
 > 
->     /*
->      * This struct serves as an example.
->      */
+>     /// <summary>
+>     /// This struct serves as an example.
+>     /// </summary>
 >     public struct MyStruct
 >     {
 >         // ...
 >     }
 > 
->     /*
->      * This record serves as an example.
->      */
+>     /// <summary>
+>     /// This record serves as an example.
+>     /// </summary>
 >     public record MyRecord(
 >         int MyProperty,
 >         string MyOtherProperty); 
